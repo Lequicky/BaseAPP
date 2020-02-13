@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-header">
+              <div class="row">
+                  <div class="col-sm-12">
+                    <a href="http://metronik.si" class="simple-text logo-mini">
+                        <div class="logo-image-small">
+                          <img src="assets/img/angular2-logo.png" style="height: 30px; width: 30px;">
+                        </div>
+                        
+                      </a>
+                  </div>
+                  
+                  <div class="col-sm-12">
+                    <a  class="simple-text logo-normal">
+                        <h5 class="card-title text-center ">Prijava</h5> 
+                      </a>
+                  </div>
+
+
+              </div>
+<!--             <div class="logo-image-small">
+                <img src="assets/img/angular2-logo.png">
+              </div>
+            <h5 class="card-title text-center mt-3 mb-3">Sign In</h5> -->
+
+          </div>
+          <div class="card-body">
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" [(ngModel)]="username"   name="username" class="form-control" placeholder="Uporabniško ime" required autofocus>
+
+              </div>
+              <br>
+              <div class="form-label-group">
+                <input type="password" [(ngModel)]="password" name="password"  id="inputPassword" class="form-control" placeholder="Geslo" required>
+     
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="login()">Prijava</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

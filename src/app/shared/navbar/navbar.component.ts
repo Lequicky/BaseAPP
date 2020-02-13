@@ -33,6 +33,10 @@ export class NavbarComponent implements OnInit{
           this.sidebarClose();
        });
     }
+
+    logout() {
+      this.router.navigate(['/login']);
+    }
     getTitle(){
       var titlee = this.location.prepareExternalUrl(this.location.path());
       if(titlee.charAt(0) === '#'){
